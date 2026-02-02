@@ -1,0 +1,11 @@
+Detected Language: en
+============================================================
+
+Full Transcription:
+ You can check the Banglai sample test case ProToddue is Banglai as well
+
+============================================================
+Segments with timestamps:
+------------------------------------------------------------
+[0.00s - 3.00s]  You can check the Banglai sample test case
+[3.00s - 5.00s]  ProToddue is Banglai as well
