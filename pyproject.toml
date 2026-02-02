@@ -1,0 +1,41 @@
+[project]
+name = "asr-middleware"
+version = "0.1.0"
+description = "Multi-lingual (Bengali + English) meeting transcription and translation system extending Fireflies.ai"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "sqlalchemy>=2.0.35",
+    "psycopg2-binary>=2.9.9",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "python-multipart>=0.0.12",
+    "aiofiles>=24.1.0",
+    "celery>=5.4.0",
+    "redis>=5.2.0",
+    "requests>=2.32.3",
+    "python-dotenv>=1.0.1",
+    "openai-whisper>=20231117",
+    "google-cloud-speech>=2.26.0",
+    "google-cloud-translate>=3.15.3",
+    "assemblyai>=0.30.0",
+    "boto3>=1.35.0",
+    "python-docx>=1.1.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "httpx>=0.27.0",
+    "black>=24.10.0",
+    "ruff>=0.7.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
