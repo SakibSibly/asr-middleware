@@ -14,6 +14,7 @@ dependencies = [
     "torch>=2.5.0",
     "torchaudio>=2.5.0",
     "openai-whisper>=20240930",
+    "librosa>=0.11.0",
 ]
 
 [tool.uv.sources]
